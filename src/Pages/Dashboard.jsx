@@ -154,7 +154,7 @@ const Dashboard = () =>{
                                                 >
                                                     <p>{timeConverter(item.time)}</p>
                                                     <img src={`icons/${item.weather.icon}.png`} alt="weather-icon" />
-                                                    <p className="fs-700">{Math.round(item.temp)} ℃</p>
+                                                    <p className=" max-content fs-700">{Math.round(item.temp)} ℃</p>
                                                 </div>
                                             )
                                         })}
