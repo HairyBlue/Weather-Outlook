@@ -12,8 +12,8 @@ export default defineConfig({
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
         manifest: {
           name: 'Weather Outlook',
-          short_name: 'MyApp',
-          description: 'My Awesome App description',
+          short_name: 'Weather Outlook',
+          description: 'My Weather Outlook',
           icons: [
             {
               src: '/android-chrome-192x192.png',

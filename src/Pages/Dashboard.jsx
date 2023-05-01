@@ -16,6 +16,10 @@ const Dashboard = () =>{
 
     const [isLoading, setLoading] = useState(true)
     const [isMainContent, setIsMainContent] = useState(false)
+
+    window.onbeforeunload = () => {
+        localStorage.removeItem('settled_data');
+    }
     
     useEffect(()=>{
         if(navigator.geolocation){
@@ -27,7 +31,8 @@ const Dashboard = () =>{
                 },(error)=>{
                     console.log(error)
                     if(error.message == "User denied geolocation prompt"){
-                        //navigate to error page                      
+                        //navigate to error page      
+                        alert("Please Allow Location")                
                     }
                 })    
         }       
